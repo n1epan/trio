@@ -1,0 +1,5 @@
+Copy the files to the following destinations on the remote machine.
+
+trio.nginx.conf - /etc/nginx/conf.d/trio.nginx.conf
+trio.upstart.conf - /etc/init/trio.conf - This allows to start and stop the service as "start mdservice" and "stop mdservice"
+trio.uwsgi.ini - /opt/apps/bose/trio/config/trio.uwsgi.ini

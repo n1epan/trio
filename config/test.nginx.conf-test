@@ -1,0 +1,18 @@
+
+
+
+    server {
+        listen  7071;
+        root /usr/share/nginx/html;
+    
+        location / { 
+        }   
+    }   
+
+    server {
+        listen 7070;
+        location / { 
+            proxy_pass http://localhost:7071/;
+        }   
+    }   
+
